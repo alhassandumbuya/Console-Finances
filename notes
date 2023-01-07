@@ -1,0 +1,29 @@
+var a = 2 + 10;
+var b = 10;
+var c = "i am a";
+
+//console.log(b);
+
+a -= 12
+
+
+//console.log(a);
+
+var firstName = 'Alhassan \" alhaji \" fineboi'
+var lastName = "Dumbuya"
+
+//console.log(firstName, lastName);
+
+var myName = "Alhassan " + "Dumbuya."
+myName += ' I live in ' + ' lawrence hill'
+var aboutMe = 'this is about ' + myName + ' this the end'
+//console.log(myName);
+//console.log(aboutMe);
+
+myName = myName.length
+//console.log(myName);
+
+
+firstLetterOfLastname = lastName[2]
+firstLetterOfLastname = lastName[lastName.length-1];
+//console.log(firstLetterOfLastname);
