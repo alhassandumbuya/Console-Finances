@@ -89,3 +89,15 @@ var finances = [
 
 console.log(finances.length);
 
+//2010 profit and loss total
+
+let finances2010 = [867884, 984655, 322013, -69417, 310503, 522857, 1033096, 604885, -216386, 477532, 893810, -80353];
+
+let sum2010 = 0;
+
+for (let i = 0; i < finances2010.length; i++) {
+    sum2010 = sum2010 + finances2010[i];
+    
+}
+console.log(sum2010);
+

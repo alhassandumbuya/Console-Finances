@@ -21,7 +21,7 @@ var aboutMe = 'this is about ' + myName + ' this the end'
 //console.log(aboutMe);
 
 myName = myName.length
-//console.log(myName);
+console.log(myName);
 
 
 firstLetterOfLastname = lastName[2]
