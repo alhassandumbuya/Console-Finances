@@ -90,8 +90,20 @@ var finances = [
 // Total amount of months
 console.log(finances.length);
 
-//2010 profit and loss total
 
+
+// The net total amount of Profit/Losses over the entire period.
+
+let netTotal= 0
+for (let i = 0; i < finances.length; i++) {
+    netTotal += finances[i][1];
+    
+}
+    
+console.log( 'Total:' + ' $'+ netTotal );
+
+//2010 profit and loss total
+/*
 let finances2010 = [867884, 984655, 322013, -69417, 310503, 522857, 1033096, 604885, -216386, 477532, 893810, -80353];
 
     let sum2010 = 0;
@@ -177,3 +189,10 @@ let finances2017 = [138230, 671099];
     
 }
 console.log(sum2017);
+
+
+//The net total profit and loss
+
+let netProfitAndLoss = sum2010 + sum2011 + sum2012 + sum2013 + sum2014 + sum2015 + sum2016 + sum2017
+    console.log(netProfitAndLoss);
+    */
