@@ -87,20 +87,54 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+console.log('Financial Analysis');
+
 // Total amount of months
-console.log(finances.length);
-
-
+console.log('Total Months ' + ': ' + finances.length);
 
 // The net total amount of Profit/Losses over the entire period.
-
 let netTotal= 0
 for (let i = 0; i < finances.length; i++) {
     netTotal += finances[i][1];
-    
 }
-    
 console.log( 'Total:' + ' $'+ netTotal );
+
+// The average of the **changes** in Profit/Losses over the entire period. 
+    let aveChangeArr = [];
+    let aveChange = 0;
+    let difference = 0;
+    let greatestProfit = 0;
+    let greatestLoss = 0;
+    let greatestProfitDate = '';
+    let greatestLossDate = '';
+
+    for (let i = 1; i < finances.length; i++) {
+        difference = finances[i][1] - finances[i-1][1]
+        aveChangeArr.push(difference)
+        
+        if (difference > greatestProfit) { 
+            greatestProfit = difference
+            greatestProfitDate = finances[i][0]  
+        } else if (difference < greatestLoss){
+            greatestLoss = difference
+            greatestLossDate = finances[i][0]
+        }
+    }
+    
+    for (let j = 0; j < aveChangeArr.length; j++) {
+        aveChange += aveChangeArr[j];
+        }
+    console.log('Total Months:' + (aveChange / (finances.length - 1) ).toFixed(2));
+    console.log( 'Greatest Increase in Profits:' + greatestProfit, greatestProfitDate);
+    console.log('Greatest Decrease in Profits:' + greatestLoss, greatestLossDate);
+    
+
+
+//The greatest increase in profits (date and amount) over the entire period.
+
+
+
+
 
 //2010 profit and loss total
 /*
