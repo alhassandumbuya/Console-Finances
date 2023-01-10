@@ -89,6 +89,8 @@ var finances = [
 
 console.log('Financial Analysis');
 
+console.log("---------------------");
+
 // Total amount of months
 console.log('Total Months ' + ': ' + finances.length);
 
@@ -125,108 +127,8 @@ console.log( 'Total:' + ' $'+ netTotal );
         aveChange += aveChangeArr[j];
         }
     console.log('Total Months:' + (aveChange / (finances.length - 1) ).toFixed(2));
-    console.log( 'Greatest Increase in Profits:' + greatestProfit, greatestProfitDate);
-    console.log('Greatest Decrease in Profits:' + greatestLoss, greatestLossDate);
+    console.log( 'Greatest Increase in Profits:' + greatestProfitDate  + " (" + greatestProfit + ")" );
+    console.log('Greatest Decrease in Profits:' + greatestLossDate + " (" + greatestLoss + ")");
     
 
 
-//The greatest increase in profits (date and amount) over the entire period.
-
-
-
-
-
-//2010 profit and loss total
-/*
-let finances2010 = [867884, 984655, 322013, -69417, 310503, 522857, 1033096, 604885, -216386, 477532, 893810, -80353];
-
-    let sum2010 = 0;
-
-    for (let i = 0; i < finances2010.length; i++) {
-        sum2010 = sum2010 + finances2010[i];
-    
-}
-console.log(sum2010);
-
-
-//2011 profit and loss total
-
-let finances2011 = [779806, -335203, 697845, 793163, 485070, 584122, 62729, 668179, 899906, 834719, 132003, 309978]
-
-    let sum2011 = 0;
-
-    for (let i = 0; i < finances2011.length; i++) {
-        sum2011 = sum2011 + finances2011[i];
-    
-}
-console.log(sum2011);
-
-
-//2012 profit and loss total
-
-let finances2012 = [-755566, 1170593, 252788, 1151518, 817256, 570757, 506702, -1022534, 475062, 779976, 144175, 542494];
-
-    let sum2012 = 0;
-    for (let i = 0; i < finances2012.length; i++) {
-        sum2012 = sum2012 + finances2012[i];
-    
-}
-console.log(sum2012);
-
-//2013 profit and loss total
-
-let finances2013 = [359333, 321469, 67780, 471435, 565603, 872480,789480, 999942, -1196225, 268997, -687986, 1150461];
-    let sum2013 = 0;
-    for (let i = 0; i < finances2013.length; i++) {
-        sum2013 = sum2013 + finances2013[i];
-    
-}
-console.log(sum2013);
-
-//2014 profit and loss total
-
-let finances2014 = [682458, 617856, 824098, 581943, 132864, 448062, 689161, 800701, 1166643, 947333, 578668, 988505];
-    let sum2014 = 0;
-    for (let i = 0; i < finances2014.length; i++) {
-        sum2014 = sum2014 + finances2014[i];
-    
-}
-console.log(sum2014);
-
-//2015 profit and loss total
-
-let finances2015 = [1139715, 1029471, 687533, -524626, 158620, 87795, 423389, 840723, 568529, 332067, 989499, 778237];
-    let sum2015 = 0;
-    for (let i = 0; i < finances2015.length; i++) {
-        sum2015 = sum2015 + finances2015[i];
-    
-}
-console.log(sum2015);
-
-//2016 profit and loss total
-
-let finances2016 = [650000, -1100387, -174946, 757143, 445709, 712961, -1163797, 569899, 768450, 102685, 795914, 60988];
-    let sum2016 = 0;
-    for (let i = 0; i < finances2016.length; i++) {
-        sum2016 = sum2016 + finances2015[i];
-    
-}
-console.log(sum2016);
-
-
-//2017 profit and loss total
-
-let finances2017 = [138230, 671099];
-    let sum2017 = 0;
-    for (let i = 0; i < finances2017.length; i++) {
-        sum2017 = sum2017 + finances2017[i];
-    
-}
-console.log(sum2017);
-
-
-//The net total profit and loss
-
-let netProfitAndLoss = sum2010 + sum2011 + sum2012 + sum2013 + sum2014 + sum2015 + sum2016 + sum2017
-    console.log(netProfitAndLoss);
-    */
